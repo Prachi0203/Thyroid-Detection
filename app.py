@@ -46,9 +46,14 @@ def predict():
         pregnant = float(request.form['pregnant'])
         sick = float(request.form['sick'])
         tumor = float(request.form['tumor'])
+<<<<<<< HEAD
         print("tumor: ",tumor)
         FTI_measured = float(request.form['FTI_measured'])
         print('FTI measured: ',FTI_measured)
+=======
+        FTI_measured = float(request.form['FTI_measured'])
+
+>>>>>>> b2fcd3f3e858f7149b11f16fc1539a73854555f0
         # Create a dictionary to store the patient's data
         patient = {
             'age': age,
@@ -110,8 +115,12 @@ def predict():
             thyroid_surgery,
             pregnant,
             sick,
+<<<<<<< HEAD
             tumor,
             FTI_measured
+=======
+            tumor
+>>>>>>> b2fcd3f3e858f7149b11f16fc1539a73854555f0
         ]).reshape(1, 26)
         predicted_class = model.predict(query)[0]
         if predicted_class == 'P':
@@ -123,4 +132,8 @@ def predict():
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(debug=True)
+=======
+    app.run(debug=True)
+>>>>>>> b2fcd3f3e858f7149b11f16fc1539a73854555f0
