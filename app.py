@@ -111,7 +111,7 @@ def predict():
             predicted_class = "Not present"
         # Create a dictionary to store the patient's data
 
-            
+        
         patient = {
             'age': age,
             'sex': sex,
@@ -142,8 +142,9 @@ def predict():
             "predict":predicted_class
         }
         # Insert the patient's data into the MongoDB collection
-
+        print("patient")
         collection.insert_one(patient)
+        print("patient inserted")
         return render_template('main.html', prediction_text=predicted_class)
 
 
