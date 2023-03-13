@@ -71,11 +71,7 @@ def predict():
         print("tumor: ", tumor)
         FTI_measured = float(request.form['FTI_measured'])
         print('FTI measured: ', FTI_measured)
-        FTI_measured = float(request.form['FTI_measured'])
         logging.debug("inputs taken")
-        # Create a dictionary to store the patient's data
-
-        # Insert the patient's data into the MongoDB collection
 
         # Perform prediction on the patient's data and return the result
         query = np.array([
@@ -106,11 +102,16 @@ def predict():
             tumor,
             FTI_measured
         ]).reshape(1, 26)
+        print("query: ",query)
         predicted_class = model.predict(query)[0]
+        print("predicted class: ",predicted_class)
         if predicted_class == 'P':
             predicted_class = "Present"
         else:
             predicted_class = "Not present"
+        # Create a dictionary to store the patient's data
+
+            
         patient = {
             'age': age,
             'sex': sex,
@@ -140,6 +141,7 @@ def predict():
             'FTI_measured': FTI_measured,
             "predict":predicted_class
         }
+        # Insert the patient's data into the MongoDB collection
 
         collection.insert_one(patient)
         return render_template('main.html', prediction_text=predicted_class)
