@@ -5,8 +5,8 @@ import pickle
 import logging
 from os import environ
 
-SECRET_KEY = environ.get('SECRET_KEY')
-
+SECRET_KEY = environ.get('MONGODB_URI')
+print("SECRET_KEY: ",MONGODB_URI)
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 app = Flask(__name__)
 client = MongoClient(SECRET_KEY)
