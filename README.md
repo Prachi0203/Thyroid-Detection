@@ -1,1 +1,1 @@
-# Thyroid-Detection
+# Thyroid Disease Predictor
