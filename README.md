@@ -23,7 +23,10 @@ https://thyroid-prediction-app.onrender.com/
 https://youtu.be/PhGftPyB5g0
 
 In case, if you would like to connect with me:
-** Social Links **
+
+# Social Links
 Linkedin Link - https://www.linkedin.com/in/prachibindal/
+
 Github Link - https://github.com/Prachi0203/
+
 Instagram Link - https://www.instagram.com/prachibindal_/
