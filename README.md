@@ -22,6 +22,10 @@ https://thyroid-prediction-app.onrender.com/
 
 https://youtu.be/PhGftPyB5g0
 
+Medium Article of the project - 
+
+]https://medium.com/@prachibindal2925/thyroid-disease-predictor-building-ml-model-part-1-9f2ab8c2d40f
+
 In case, if you would like to connect with me:
 
 # Social Links
@@ -30,3 +34,5 @@ Linkedin Link - https://www.linkedin.com/in/prachibindal/
 Github Link - https://github.com/Prachi0203/
 
 Instagram Link - https://www.instagram.com/prachibindal_/
+
+Medium Link - https://medium.com/@prachibindal2925
